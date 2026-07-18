@@ -34,8 +34,8 @@ A production-quality AI-powered application to tailor your resume for every job 
 
 ```bash
 # 1. Clone the repo
-git clone <your-repo-url>
-cd "resume-updater"
+git clone https://github.com/mkabra-07/resume-optimize-ai.git
+cd resume-optimize-ai
 
 # 2. Configure environment
 cp backend/.env.example backend/.env
@@ -55,7 +55,7 @@ open http://localhost:3000
 #### Backend
 
 ```bash
-cd resume-updater/backend
+cd backend
 
 # Create virtual environment
 python -m venv venv
@@ -81,7 +81,7 @@ Interactive docs: `http://localhost:8000/docs`
 #### Frontend
 
 ```bash
-cd resume-updater/frontend
+cd frontend
 
 # Install dependencies
 npm install
@@ -160,7 +160,7 @@ Full interactive docs: `http://localhost:8000/docs`
 ## 🧪 Running Tests
 
 ```bash
-cd resume-updater/backend
+cd backend
 source venv/bin/activate
 pytest tests/ -v --cov=. --cov-report=html
 open htmlcov/index.html
@@ -171,7 +171,7 @@ open htmlcov/index.html
 ## 📁 Project Structure
 
 ```
-resume-updater/
+.
 ├── backend/
 │   ├── main.py                # FastAPI app entry point
 │   ├── config.py              # Settings (pydantic-settings)
